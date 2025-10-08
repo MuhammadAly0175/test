@@ -1,0 +1,477 @@
+* {
+    scroll-padding: 66px;
+    color: black;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'Boutros-News';
+    src: url(../fonts/BoutrosNewsH1-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Monadi';
+    src: url(../fonts/Monadi.ttf);
+}
+
+.custom-word-spacing {
+    word-spacing: 0.5em;
+}
+
+.custom-word-spacing2 {
+    word-spacing: 0.3em;
+}
+
+img {
+    border-radius: 10px;
+}
+
+/* --------------------------------- */
+
+#mainNav {
+    background-color: rgba(0, 0, 0, 1) !important;
+}
+
+#mainNav .container>a {
+    letter-spacing: 1px;
+}
+
+#mainNav #nav_expand_icon {
+    color: white;
+}
+
+#mainNav a {
+    font-weight: 600;
+    margin: 0px;
+}
+
+.navActive_but_before a::after {
+    content: "";
+    position: absolute;
+    border: 0px solid white;
+    width: 0%;
+    bottom: -2px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+#mainNav #main_nav_ul>li::after {
+    content: "";
+    position: absolute;
+    border: 0px solid white;
+    width: 0%;
+    transition: 0.3s;
+}
+
+#mainNav #main_nav_ul>li:hover::after {
+    border: 1px solid white;
+    width: 100%;
+}
+
+.active {
+    transition: 0.3s;
+}
+
+.active::after {
+    content: "";
+    position: absolute;
+    border: 1px solid white !important;
+    width: 100% !important;
+    bottom: -2px;
+    left: 0px;
+    transition: 0.3s;
+}
+
+
+#mainNav #main_nav_ul>li {
+    position: relative;
+    padding: 5px 0px;
+    width: fit-content;
+}
+
+#mainNav #main_nav_ul>li>a {
+    padding: 0px;
+    position: relative;
+}
+
+#mainNav #navbar_button {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#mainNav #navbar_inner_dropdown_button:hover {
+    color: rgb(4, 122, 255);
+}
+
+#mainNav #navbar_inner_dropdown_button i {
+    font-size: 14px;
+}
+
+#mainNav #navbar_inner_dropdown_button:focus {
+    border: none;
+}
+
+#mainNav #navbar_dropdown_icon {
+    font-size: 12px;
+}
+
+#logo_sec {
+    margin-top: 60px;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/logo.jpg");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#anim_word1 {
+    animation: text1 10s steps(100) infinite,
+        blink 0.7s steps(10) infinite;
+    transform: translateX(-6px);
+}
+
+#anim_word2 {
+    animation: text2 10s steps(100) infinite,
+        blink 0.7s steps(10) infinite;
+    transform: translateX(6px);
+}
+
+#anim_word3 {
+    animation: text3 10s steps(100) infinite,
+        blink 0.7s steps(10) infinite;
+}
+
+#logo_sec span {
+    font-size: 72px;
+    text-align: center;
+    overflow: hidden;
+    white-space: pre;
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+}
+
+@keyframes text1 {
+
+    0%,
+    33.3%,
+    66.6%,
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    13.65%,
+    19.65% {
+        clip-path: inset(0 0 0 0%);
+    }
+}
+
+@keyframes text2 {
+
+    0%,
+    33.3%,
+    66.6%,
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    44.95%,
+    51.95% {
+        clip-path: inset(0 0 0 0%);
+    }
+}
+
+@keyframes text3 {
+
+    0%,
+    33.3%,
+    66.6%,
+    100% {
+        clip-path: inset(0 0 0 100%);
+    }
+
+    80.25%,
+    86.25% {
+        clip-path: inset(0 0 0 0%);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* --------------------------------- */
+
+#main_sec {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Boutros-News';
+}
+
+#main_sec .section_title {
+    border-radius: 20px;
+    font-family: 'Monadi';
+}
+
+#main_sec .photo_title {
+    color: rgb(73, 124, 49);
+    font-family: 'Monadi';
+}
+
+#main_sec .list_icons {
+    width: 50px;
+    margin-left: 25px;
+}
+
+#main_sec #footer_goer {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+    display: inline-block;
+}
+
+#main_sec #footer_goer:hover {
+    background-color: green;
+}
+
+#main_sec p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+#main_sec li {
+    font-size: 20px;
+}
+
+#main_sec #who_are_we {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* --------------------------------- */
+
+#news_sec {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Boutros-News';
+}
+
+#news_sec .section_title {
+    border-radius: 20px;
+    font-family: 'Monadi';
+}
+
+#news_sec .photo_title {
+    color: rgb(73, 124, 49);
+    font-family: 'Monadi';
+}
+
+#news_sec .list_icons {
+    width: 50px;
+    margin-left: 25px;
+}
+
+#news_sec #footer_goer {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+    display: inline-block;
+}
+
+#news_sec #footer_goer:hover {
+    background-color: green;
+}
+
+#news_sec p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+#news_sec li {
+    font-size: 20px;
+}
+
+#news_sec #who_are_we {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* --------------------------------- */
+
+#courses_sec {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Boutros-News';
+}
+
+#courses_sec .section_title {
+    border-radius: 20px;
+    font-family: 'Monadi';
+}
+
+#courses_sec .photo_title {
+    color: rgb(73, 124, 49);
+    font-family: 'Monadi';
+}
+
+#courses_sec .list_icons {
+    width: 50px;
+    margin-left: 25px;
+}
+
+#courses_sec #footer_goer {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+    display: inline-block;
+}
+
+#courses_sec #footer_goer:hover {
+    background-color: green;
+}
+
+#courses_sec p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+#courses_sec li {
+    font-size: 20px;
+}
+
+#courses_sec #post1 {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#courses_sec #post2 {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#courses_sec hr{
+    height: 3px;
+    background-color: black;
+}
+
+/* --------------------------------- */
+
+#seminars_sec {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Boutros-News';
+}
+
+#seminars_sec .section_title {
+    border-radius: 20px;
+    font-family: 'Monadi';
+}
+
+#seminars_sec .photo_title {
+    color: rgb(73, 124, 49);
+    font-family: 'Monadi';
+}
+
+#seminars_sec .list_icons {
+    width: 50px;
+    margin-left: 25px;
+}
+
+#seminars_sec #footer_goer {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: auto;
+    display: inline-block;
+}
+
+#seminars_sec #footer_goer:hover {
+    background-color: green;
+}
+
+#seminars_sec p {
+    line-height: 2.5;
+    font-size: 20px;
+}
+
+#seminars_sec li {
+    font-size: 20px;
+}
+
+#seminars_sec #who_are_we {
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* --------------------------------- */
+
+#events_sec {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Boutros-News';
+}
+
+#events_sec .section_title {
+    border-radius: 20px;
+    font-family: 'Monadi';
+}
+
+/* --------------------------------- */
+
+#footer_sec {
+    background-color: rgb(74, 134, 49)
+}
+
+#footer_sec i {
+    font-size: 20px;
+}
+
+#footer_sec div {
+    width: 45px;
+    height: 45px;
+    border: 1px solid white;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+#footer_sec div:hover {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin-right: 16px;
+}
+
+@media (min-width:576px) {
+    .modal-content {
+        margin-right: 0px;
+    }
+}
+
+.hover_class:hover {
+    cursor: pointer;
+}
